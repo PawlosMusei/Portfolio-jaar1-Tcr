@@ -87,27 +87,6 @@ main{
     display: flex;
     justify-content: center;
   }
-.headtext {
-    grid-area: headtext; 
-    height: 18vh;
-    width: 100%;
-    font-size: 2rem;
-   h1{
-     border-radius: 1rem;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     color: $backgroundtext;
-}
-   h3{
-     margin-top: 1rem;
-     border-radius: 1rem;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     color: $backgroundtext;
-}
-}
 .img {
   grid-area: img; 
   height: 60vh;
