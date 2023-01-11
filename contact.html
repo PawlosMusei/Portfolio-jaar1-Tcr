@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <section class="sd">
+      <div class="logo">
+        <p class="logo__text">PA</p>
+      </div>
+      <nav class="sidebar">
+        <ul class="sidebar__item">
+          <li class="sidebar__item__icon">
+            <a class="link" href="index.html">Home</a>
+          </li>
+          <li class="sidebar__item__icon">
+            <a class="link" href="aboutme.html">About Me</a>
+          </li>
+          <li class="sidebar__item__icon">
+            <a class="link" href="works.html">Works</a>
+          </li>
+          <li class="sidebar__item__icon">
+            <a class="link" href="skills.html">Skills</a>
+          </li>
+          <li class="sidebar__item__icon">
+            <a class="link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <main class="background-container">
+      <div class="stars"></div>
+      <div class="twinkling"></div>
+      <div class="clouds"></div>
+    </main>
+    <div class="contactFormContainer">
+      <h3>Contact Form</h3>
+      <form id="contactForm" action="r" method="POST">
+          <label for="nameInput" class="srOnly"></label>
+          <input type="text" id="nameInput" name="nameInput" class="nameInput" required="" placeholder="Your Name*">
+          <label for="emailInput" class="srOnly"></label>
+          <input type="email" id="emailInput" name="emailInput" class="emailInput" required="" placeholder="Your Email*">
+          <label for="subjectInput" class="srOnly"></label>
+          <input type="text" id="subjectInput" name="subjectInput" class="subjectInput" required="" placeholder="Subject*">
+          <label for="messageInput" class="srOnly"></label>
+          <textarea class="messageInput" name="messageInput" id="messageInput" required="" placeholder="Your Message*"></textarea>
+      </form>
+      <button type="submit" class="formSend" target="_blank" form="contactForm" rel="noopener noreferrer">SEND</button>
+    </div>
+    <footer>
+      <p>© Pawlos Abraham 2023</p>
+    </footer>
+  </body>
+</html>
