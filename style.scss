@@ -15,7 +15,6 @@ $animation3: rgb(195, 0, 255);
 
 body{
   background-image: url(./img/achtergrondportfoliowebstie.jpg);
-  overflow: hidden;
   height: 100vh;
 }
 .logo{
@@ -87,12 +86,6 @@ main{
     display: flex;
     justify-content: center;
   }
-.img {
-  grid-area: img; 
-  height: 60vh;
-  width: 24vw;
-  margin-left: 20rem;
-}
 .acoutContainer{
   display: flex;
   align-items: center;
@@ -116,6 +109,8 @@ main{
     color: $backgroundtext;
     font-family: poppins, sans-serif;
     font-weight: 600;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
   }
   &__text{
     border-radius: 1rem;
@@ -125,12 +120,16 @@ main{
     padding: 10px;
     line-height: 20px;
     font-size: larger;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
   }
   &__img{
     height: 50vh;
     width: 20vw;
     border-radius: 1rem;
     box-shadow: 2px 7px  5px $backgoundshadow;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
   }
 }
 .works{
@@ -142,6 +141,8 @@ main{
     color: $backgroundtext;
     font-size: 3rem;
     font-family: 'Pattaya', sans-serif;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
   }
   &__text{
     border-radius: 1rem;
@@ -153,12 +154,16 @@ main{
     flex-direction: column;
     font-size: 1.7rem;
     font-family: poppins, sans-serif;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
   }
   &__img1{
     margin-top: 1rem;
     height: 20vh;
     width: 20vw;
     box-shadow: 2px 7px  5px $backgoundshadow;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
   }
 }
 .works1{
@@ -168,11 +173,15 @@ main{
   flex-direction: column;
   height: 40vh;
   margin-top: 1rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
   &__img2{
     margin-top: 1rem;
     height: 20vh;
     width: 20vw;
     box-shadow: 2px 7px  5px $backgoundshadow;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
   }
 }
 .skills__title{
@@ -180,14 +189,14 @@ main{
     margin-left: 14rem;
     align-items: center;
     color: $backgroundtext;
-    font-size: 3rem;
+    font-size: 5rem;
     font-family: 'Pattaya', sans-serif;
 }
 .skillsContainer {
   text-align: center;
-  font-size: 0.7rem;
-  margin-left: 23rem;
-  margin-top: 8rem;
+  font-size: 1.5rem;
+  margin-left: 13rem;
+  margin-top: 1rem;
 }
 .sectionContainer {
   border-radius: 50px;
@@ -199,15 +208,15 @@ main{
   display: grid;
   -ms-grid-columns: (minmax(80px, 1fr))[auto-fill];
   grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-  grid-column-gap: 90px;
+  grid-column-gap: 200px;
   grid-row-gap: 50px;
-  width: 50vw;
+  width: 70vw;
   li{
     background-color: $backgoundshadow;
     padding: 10px;
     border-radius: 15px;
-    height: 12vh;
-    width: 10vw;
+    height: 19vh;
+    width: 17vw;
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
     -webkit-box-shadow: 0px 4px 8px rgb(134, 151, 168);
@@ -217,16 +226,17 @@ main{
       color: $backgroundtext;
     }
     img{
-      width: 50px;
-      height: 35px;
+      width: 130px;
+      height: 70px;
     }
     .img1{
-      width: 40px;
-      height: 35px;
+      width: 90px;
+      height: 75px;
     }
     .img2{
-      width: 80px;
-      height: 35px;
+      margin-top: 0.5rem;
+      width: 140px;
+      height: 55px;
     }
   }
 }
@@ -493,5 +503,82 @@ footer {
     color: #333;
     font-size: 1rem;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .acoutContainer{
+    flex-direction: column;
+    overflow: visible!important;
+  }
+  .aboutme{
+    &__title{
+      width: 50vw;
+      font-size: 5rem;
+    }
+    &__text{
+      width: 40vw;
+      height: 70vh;
+      padding: 20px;
+      line-height: 40px;
+      font-size: 1.5rem;
+    }
+    &__img{
+      height: 40vh;
+      width: 40vw;
+    }
+  }
+ .logo{
+  height: 15vh;
+  width: 13vw;
+  font-size: 4rem;
+  &__text{
+    position: relative;
+    margin-top: 1rem;
+    height: 8vh;
+    animation: neon1 1s ease-in-out infinite alternate;
+    @keyframes neon1 {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #000000,
+          0 0 70px #000000, 0 0 80px #000000, 0 0 100px #000000, 0 0 150px #000000;
+      }
+      to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #000000,
+          0 0 35px #000000, 0 0 40px #000000, 0 0 50px #000000, 0 0 75px #000000;
+      }
+    }
+}
+}
+.sidebar {
+  height: 125vh;
+  width: 16vw;
+  font-size: 1.3rem;
+}
+  .text {
+  margin-left: 100px;
+  font-family: poppins, sans-serif;
+  font-size: 3rem;
+  display: flex;
+  bottom: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
+  gap: 1px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+  .background-container{
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    z-index: -1;
+    bottom: 0;
+    width: 100vw;
   }
 }

@@ -8,7 +8,6 @@
 
 body {
   background-image: url(./img/achtergrondportfoliowebstie.jpg);
-  overflow: hidden;
   height: 100vh;
 }
 
@@ -89,35 +88,6 @@ main {
   justify-content: center;
 }
 
-.headtext {
-  grid-area: headtext;
-  height: 18vh;
-  width: 100%;
-  font-size: 2rem;
-}
-.headtext h1 {
-  border-radius: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-.headtext h3 {
-  margin-top: 1rem;
-  border-radius: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.img {
-  grid-area: img;
-  height: 60vh;
-  width: 24vw;
-  margin-left: 20rem;
-}
-
 .acoutContainer {
   display: flex;
   align-items: center;
@@ -143,6 +113,7 @@ main {
   color: white;
   font-family: poppins, sans-serif;
   font-weight: 600;
+  transition: all 0.3s ease-in;
 }
 .aboutme__text {
   border-radius: 1rem;
@@ -152,12 +123,14 @@ main {
   padding: 10px;
   line-height: 20px;
   font-size: larger;
+  transition: all 0.3s ease-in;
 }
 .aboutme__img {
   height: 50vh;
   width: 20vw;
   border-radius: 1rem;
   box-shadow: 2px 7px 5px rgb(27, 26, 26);
+  transition: all 0.3s ease-in;
 }
 
 .works {
@@ -170,6 +143,7 @@ main {
   color: white;
   font-size: 3rem;
   font-family: "Pattaya", sans-serif;
+  transition: all 0.3s ease-in;
 }
 .works__text {
   border-radius: 1rem;
@@ -181,12 +155,14 @@ main {
   flex-direction: column;
   font-size: 1.7rem;
   font-family: poppins, sans-serif;
+  transition: all 0.3s ease-in;
 }
 .works__img1 {
   margin-top: 1rem;
   height: 20vh;
   width: 20vw;
   box-shadow: 2px 7px 5px rgb(27, 26, 26);
+  transition: all 0.3s ease-in;
 }
 
 .works1 {
@@ -196,12 +172,14 @@ main {
   flex-direction: column;
   height: 40vh;
   margin-top: 1rem;
+  transition: all 0.3s ease-in;
 }
 .works1__img2 {
   margin-top: 1rem;
   height: 20vh;
   width: 20vw;
   box-shadow: 2px 7px 5px rgb(27, 26, 26);
+  transition: all 0.3s ease-in;
 }
 
 .skills__title {
@@ -209,15 +187,15 @@ main {
   margin-left: 14rem;
   align-items: center;
   color: white;
-  font-size: 3rem;
+  font-size: 5rem;
   font-family: "Pattaya", sans-serif;
 }
 
 .skillsContainer {
   text-align: center;
-  font-size: 0.7rem;
-  margin-left: 23rem;
-  margin-top: 8rem;
+  font-size: 1.5rem;
+  margin-left: 13rem;
+  margin-top: 1rem;
 }
 
 .sectionContainer {
@@ -231,16 +209,16 @@ main {
   display: grid;
   -ms-grid-columns: minmax(80px, 1fr) [auto-fill];
   grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-  grid-column-gap: 90px;
+  grid-column-gap: 200px;
   grid-row-gap: 50px;
-  width: 50vw;
+  width: 70vw;
 }
 .skillsGrid li {
   background-color: rgb(27, 26, 26);
   padding: 10px;
   border-radius: 15px;
-  height: 12vh;
-  width: 10vw;
+  height: 19vh;
+  width: 17vw;
   transition: all 0.3s ease-in;
   box-shadow: 0px 4px 8px rgb(134, 151, 168);
 }
@@ -249,16 +227,17 @@ main {
   color: white;
 }
 .skillsGrid li img {
-  width: 50px;
-  height: 35px;
+  width: 130px;
+  height: 70px;
 }
 .skillsGrid li .img1 {
-  width: 40px;
-  height: 35px;
+  width: 90px;
+  height: 75px;
 }
 .skillsGrid li .img2 {
-  width: 80px;
-  height: 35px;
+  margin-top: 0.5rem;
+  width: 140px;
+  height: 55px;
 }
 
 @keyframes move-background {
@@ -507,4 +486,86 @@ footer p {
   color: #333;
   font-size: 1rem;
   text-align: center;
+}
+
+@media screen and (max-width: 820px) {
+  .acoutContainer {
+    flex-direction: column;
+    overflow: visible !important;
+  }
+  .aboutme__title {
+    width: 50vw;
+    font-size: 5rem;
+  }
+  .aboutme__text {
+    width: 40vw;
+    height: 70vh;
+    padding: 20px;
+    line-height: 40px;
+    font-size: 1.5rem;
+  }
+  .aboutme__img {
+    height: 40vh;
+    width: 40vw;
+  }
+  .logo {
+    height: 15vh;
+    width: 13vw;
+    font-size: 4rem;
+  }
+  .logo__text {
+    position: relative;
+    margin-top: 1rem;
+    height: 8vh;
+    -webkit-animation: neon1 1s ease-in-out infinite alternate;
+            animation: neon1 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #000000, 0 0 70px #000000, 0 0 80px #000000, 0 0 100px #000000, 0 0 150px #000000;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #000000, 0 0 35px #000000, 0 0 40px #000000, 0 0 50px #000000, 0 0 75px #000000;
+    }
+  }
+  @keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #000000, 0 0 70px #000000, 0 0 80px #000000, 0 0 100px #000000, 0 0 150px #000000;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #000000, 0 0 35px #000000, 0 0 40px #000000, 0 0 50px #000000, 0 0 75px #000000;
+    }
+  }
+  .sidebar {
+    height: 125vh;
+    width: 16vw;
+    font-size: 1.3rem;
+  }
+  .text {
+    margin-left: 100px;
+    font-family: poppins, sans-serif;
+    font-size: 3rem;
+    display: flex;
+    bottom: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: white;
+    gap: 1px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    bottom: 0;
+    width: 100vw;
+  }
 }/*# sourceMappingURL=style.css.map */
