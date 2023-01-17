@@ -212,6 +212,7 @@ main {
   grid-column-gap: 200px;
   grid-row-gap: 50px;
   width: 70vw;
+  z-index: -99;
 }
 .skillsGrid li {
   background-color: rgb(27, 26, 26);
@@ -478,7 +479,7 @@ footer {
   background-color: white;
   width: 95vw;
   margin-left: 5rem;
-  margin-top: 1.21rem;
+  margin-top: 3.35rem;
 }
 footer p {
   width: 200px;
@@ -489,9 +490,51 @@ footer p {
 }
 
 @media screen and (max-width: 820px) {
+  .contactFormContainer {
+    margin-left: 15rem;
+  }
+  footer {
+    margin-top: 12rem;
+  }
+  .skillsGrid {
+    grid-column-gap: 90px;
+    grid-row-gap: 40px;
+    width: 50vw;
+    height: 70vh;
+    z-index: 100;
+  }
+  .skillsGrid li {
+    height: 13vh;
+    width: 24vw;
+  }
+  .works {
+    margin-left: 5rem;
+  }
+  .works__title {
+    font-size: 5rem;
+  }
+  .works__text {
+    font-size: 2rem;
+  }
+  .works__img1 {
+    height: 17vh;
+    width: 40vw;
+  }
+  .works1 {
+    margin-left: 5rem;
+  }
+  .works1__text {
+    font-size: 2rem;
+  }
+  .works1__img2 {
+    height: 17vh;
+    width: 40vw;
+  }
   .acoutContainer {
     flex-direction: column;
-    overflow: visible !important;
+  }
+  .aboutme {
+    margin-left: 5rem;
   }
   .aboutme__title {
     width: 50vw;
@@ -505,12 +548,18 @@ footer p {
     font-size: 1.5rem;
   }
   .aboutme__img {
-    height: 40vh;
+    height: 37vh;
     width: 40vw;
+  }
+  .container {
+    margin-left: 12rem;
+  }
+  .container .overlay {
+    margin-left: 12rem;
   }
   .logo {
     height: 15vh;
-    width: 13vw;
+    width: 16vw;
     font-size: 4rem;
   }
   .logo__text {
@@ -537,7 +586,7 @@ footer p {
     }
   }
   .sidebar {
-    height: 125vh;
+    height: 123vh;
     width: 16vw;
     font-size: 1.3rem;
   }
@@ -560,12 +609,7 @@ footer p {
     height: max-content;
   }
   .background-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    bottom: 0;
-    width: 100vw;
+    width: 115vw;
+    height: 120vh;
   }
 }/*# sourceMappingURL=style.css.map */
